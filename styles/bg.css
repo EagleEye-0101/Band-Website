@@ -1,6 +1,6 @@
 /* Set full-page background image (excluding footer) */
 body {
-    background: url('/assets/images/about-bg.png') no-repeat center center fixed;
+    background: url('/assets/images/trigger-bg.png') no-repeat center center fixed;
     background-size: cover;
     color: white;
     margin: 0;
