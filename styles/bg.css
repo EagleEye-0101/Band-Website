@@ -8,7 +8,7 @@ body {
 }
 
 body.aboutbg {
-    background: url('/assets/images/members/trigger-bg1.jpg') no-repeat center center fixed;
+    background: url('"/assets/images/members/trigger-bg1.jpg'") no-repeat center center fixed;
     background-size: cover;
     color: white;
     margin: 0;
