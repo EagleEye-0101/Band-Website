@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIGGER | Music</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <button class="menu-btn" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="tour.html">Tour</a>
+    </nav>
+
+    <section class="music">
+        <h2>Discography</h2>
+        
+        <!-- Album Grid -->
+        <div class="album-grid">
+            <div class="album-card">
+                <img src="assets/images/albums/secret-night.jpg" alt="SECRET NIGHT">
+                <div class="album-info">
+                    <h3>SECRET NIGHT</h3>
+                    <button onclick="playSong('secret-night')">Play</button>
+                </div>
+            </div>
+            <!-- Add more albums -->
+        </div>
+
+        <!-- Audio Player -->
+        <div class="music-player">
+            <!-- SECRET NIGHT -->
+            <div class="track-card">
+                <div class="album-art" style="background-image: url('assets/images/albums/secret-night.jpg')"></div>
+                <div class="track-info">
+                    <h3>SECRET NIGHT</h3>
+                    <audio controls>
+                        <source src="assets/audio/secret-night.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        
+            <!-- DIAMOND FUSION -->
+            <div class="track-card">
+                <div class="album-art" style="background-image: url('assets/images/albums/diamond-fusion.jpg')"></div>
+                <div class="track-info">
+                    <h3>DIAMOND FUSION</h3>
+                    <audio controls>
+                        <source src="assets/audio/diamond-fusion.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="trigger-footer">
+        <div class="footer-content">
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Ignite Faster</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h4>Follow the Flame</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">🔥</a>
+                    <a href="#" class="social-icon">⚡</a>
+                    <a href="#" class="social-icon">🌑</a>
+                </div>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-section">
+                <div class="copyright">
+                    <p>© 2024 TRIGGER</p>
+                    <p>All rights consumed by Trigger</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

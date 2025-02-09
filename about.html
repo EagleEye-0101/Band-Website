@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIGGER | About</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/bg.css">
+</head>
+<body>
+   <!-- Add this after the opening <body> tag -->
+    <!-- Hamburger Menu Button -->
+    <button class="menu-btn" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="tour.html">Tour</a>
+    </nav>
+    <section class="about">
+        <picture>
+            <source src="assets/images/about-bg.png" type="image/jpeg">
+
+
+        </picture>
+        <h1 style="text-align:center;color:black;font-size:30px;">We Are the Inferno</h1>
+        <p class="band-tagline">TRIGGER isn’t just a band – we’re a revolution. Born from the ashes of conformity, we ignite stages and souls.</p>
+    
+        <div class="member-grid">
+            <!-- Gaku -->
+            <div class="member-card">
+                <div class="card-front">
+                    <img src="assets/images/members/gaku.jpeg" alt="Gaku Yaotome">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/members/gaku12.jpeg" alt="Gaku Yaotome">
+                    <h3>Gaku Yaotome</h3>
+                    <p class="member-role">Leader / Vocals</p>
+                    <p class="member-quote">"We don’t perform. We detonate."</p>
+                    <div class="member-stats">
+                        <span>🔥 Pyrotechnics Expert</span>
+                        <span>🎤 Lyric Architect</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tenn -->
+            <div class="member-card">
+                <div class="card-front">
+                    <img src="assets/images/members/tenn.jpeg" alt="Tenn Kujo">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/members/tenn13.jpeg" alt="Tenn Kujo">
+                    <h3>Tenn Kujo</h3>
+                    <p class="member-role">Center / Choreography</p>
+                    <p class="member-quote">"Perfection isn’t a goal – it’s the baseline."</p>
+                    <div class="member-stats">
+                        <span>💫 Movement Alchemist</span>
+                        <span>🎭 Visual Strategist</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ryunosuke -->
+            <div class="member-card">
+                <div class="card-front">
+                    <img src="assets/images/members/ryunosuke.jpeg" alt="Ryunosuke Tsunashi">
+                </div>
+                <div class="card-back">
+                    <img src="assets/images/members/ryunosuke12.jpeg" alt="Ryunosuke Tsunashi">
+                    <h3>Ryunosuke Tsunashi</h3>
+                    <p class="member-role">Energy / Fan Interaction</p>
+                    <p class="member-quote">"If the crowd isn’t sweating, we’re not done."</p>
+                    <div class="member-stats">
+                        <span>⚡ Crowd Igniter</span>
+                        <span>🎸 Rhythm Catalyst</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="trigger-footer">
+        <div class="footer-content">
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Ignite Faster</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h4>Follow the Flame</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">🔥</a>
+                    <a href="#" class="social-icon">⚡</a>
+                    <a href="#" class="social-icon">🌑</a>
+                </div>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-section">
+                <div class="copyright">
+                    <p>© 2024 TRIGGER</p>
+                    <p>All rights consumed by Trigger</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIGGER | Contact</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <button class="menu-btn" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="tour.html">Tour</a>
+    </nav>
+
+    <section class="contact">
+        <h1>Fuel the Fire</h1>
+        
+        <form id="contact-form">
+            <!-- Name -->
+            <div class="form-group">
+                <input type="text" id="name" required>
+                <label for="name">Name :</label>
+                <span class="neon-border"></span>
+            </div>
+            
+            <!-- Email -->
+            <div class="form-group">
+                <input type="email" id="email" required>
+                <label for="email">Email :</label>
+                <span class="neon-border"></span>
+            </div>
+            
+            <!-- Phone -->
+            <div class="form-group">
+                <input type="tel" id="phone" required>
+                <label for="phone">Phone No. :</label>
+                <span class="neon-border"></span>
+            </div>
+            
+            <!-- Gender -->
+            <div class="form-group">
+                <select id="gender" required>
+                    <option value="" disabled selected></option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                <label for="gender">Gender :</label>
+                <span class="neon-border"></span>
+            </div>
+            
+            <!-- Message -->
+            <div class="form-group">
+                <textarea id="message" required></textarea>
+                <label for="message">Message :</label>
+                <span class="neon-border"></span>
+            </div>
+            
+            <button type="submit" class="fire-button">
+                <span class="fire-text">Send Message</span>
+            </button>
+        </form>
+
+        <!-- Social Media -->
+        <div class="social-grid">
+            <a href="#" class="social-icon twitter">𝕏</a>
+            <a href="#" class="social-icon instagram">📸</a>
+            <a href="#" class="social-icon youtube">▶️</a>
+        </div>
+    </section>
+    <footer class="trigger-footer">
+        <div class="footer-content">
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Ignite Faster</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h4>Follow the Flame</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">🔥</a>
+                    <a href="#" class="social-icon">⚡</a>
+                    <a href="#" class="social-icon">🌑</a>
+                </div>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-section">
+                <div class="copyright">
+                    <p>© 2024 TRIGGER</p>
+                    <p>All rights consumed by Trigger</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+        document.getElementById('trigger-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('TRIGGER has received your message. Expect flames.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
