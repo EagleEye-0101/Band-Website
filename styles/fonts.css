@@ -1,0 +1,9 @@
+/* fonts.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+/* Define font variables (optional but recommended) */
+:root {
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --font-accent: 'Cinzel', serif;
+}
